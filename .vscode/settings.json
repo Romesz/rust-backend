@@ -1,0 +1,6 @@
+{
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.enableAllHovers": true,
+    "debug.inlineValues": true,
+    "debug.openExplorerOnEnd": true
+}

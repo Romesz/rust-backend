@@ -1,0 +1,19 @@
+version: '2.1'
+services:
+  mongo:
+    image: "mongo"
+    ports:
+      - "27017:27017"
+    volumes:
+      - data-volume:/data/db
+  web:
+    build: .
+    restart: always
+    ports:
+     - "8000:8000"
+    depends_on:
+      - mongo
+    volumes:
+      - ./:/app
+volumes:
+  data-volume:
